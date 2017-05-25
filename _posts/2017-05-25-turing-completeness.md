@@ -52,4 +52,4 @@ References, in no particular order:
 * [University of Cambridge's explanation on Turing machines](https://www.cl.cam.ac.uk/projects/raspberrypi/tutorials/turing-machine/one.html)
 * [ScienceBlogs' explanation on Turing machines](http://scienceblogs.com/goodmath/2007/02/03/basics-the-turing-machine-with-1/)
 
-[example-tape]: https://www.cl.cam.ac.uk/projects/raspberrypi/tutorials/turing-machine/example_turing_tape.jpg
+[example-tape]: /assets/images/2017-05-25-turing-completeness/example_turing_tape.jpg
