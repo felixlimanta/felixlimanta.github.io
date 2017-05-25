@@ -46,7 +46,7 @@ The initial version of the Turing machine had just a long single tape. Later on,
 
 # Turing Completeness
 
-If a physical machine or a virtual machine can take any program and run it just like a Turing machine, then that machine is called "Turing complete".
+If a physical machine or a virtual machine can take any program and run it just like a Turing machine, then that machine is called "Turing complete". Turing completeness is kind of a certification---if something can solve any (solvable) problem, that something is Turing complete.
 
 ![A scientific calculator, despite its power, is not Turing complete][scientific-calc]
 *A Turing incomplete system*
@@ -85,21 +85,21 @@ Just because a language is Turing complete doesn't mean you want to use it. Turi
 * FRACTRAN
   ```fractran
   5^205469705004861725972941750691144/2
-
-  (e.g. 5^(72*256^0 + 101*256^1 + 108*256^2 + 108*256^3 + 111*256^4 + 44*256^5 + 32*256^6 + 87*256^7
-           + 111*256^8 + 114*256^9 + 108*256^10 + 100*256^11 + 33*256^12 + 10*256^13)/2)
   ```
-  * Grass
+* Grass
   ```grass
   wvwwWWwWWWwvWwwwwWWwWWWwWWWWwWWWWWwWWWWWWwWWWWWWWwWwwwwwwwwwwwwWWWWwWWWWWWWwWWWWWWWWWWWWWWwWWWWWWWWWWWwwWWWWWWWWWWwwWWWWWWWWWWWWwWWWWWWWWWWwwWWWWWWWWWWwwwwwwWWWWWWWWWWWWWWWwWWWWWWWWWWWWWWWWWWWWWwWWWWWWWWWWWWWWWWWWwwWWWWWWWWWWWWWWWWWwwWWWWWWWWWWWWWWWWWwwwwwWWWWWWWWWWWWWWWWWWWWwwWWWWWWWWWWWWWWWWWWWWWWwWWWWWWWWWWWWWWWWWWWWWWWWWwwwwwwwwwwwwwwwwwwwwwwwwwwWwwwwwwwwwwWWwwwwwwwWWWwwwwwwwWWWWwWWWWWwwwwwwwwWWWWWWwwwwwwwwwwwwwwwwWWWWWWWwwwwwwwwwwwwwwwwwwwwWWWWWWWWwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwWWWWWWWWWwwwwWWWWWWWWWWwwwwwwwwwwwWWWWWWWWWWWwwwwwwwWWWWWWWWWWWWwwwwwwwwwwwwwwwwwwWWWWWWWWWWWWWwwwwwwwwwwwwwwwwwwwwwwwww
-  ```
-  * Piet (yes, this is code)
+    ```
+* Piet (yes, this is code)
+  
   ![Hello World in Piet][piet-hello-world]
-  * Malbolge
+* Malbolge
   ```malbolge
   (=<`#9]~6ZY32Vx/4Rs+0No-&Jk)"Fh}|Bcy?`=*z]Kw%oG4UUS0/@-ejc(:'8dc
   ```
-  
+
+In conclusion, just because something can calculate anything doesn't mean you should ever actually try to program with it. Just because you can make crabs solve the Travelling Salesman Problem doesn't mean you should.
+
 # TL;DR
 If something can run any algorithm, it's Turing complete. Yes, even crabs.
 
