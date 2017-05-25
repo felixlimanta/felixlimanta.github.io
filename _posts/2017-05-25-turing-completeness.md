@@ -8,6 +8,7 @@ tags:
   - assignment
   - computing
 last_modified_at: 2017-05-25T11:55:49+07:00
+excerpt: A (hopefully) simple explanation on Turing completeness
 ---
 
 Wikipedia's first paragraph on Turing completeness is this.
@@ -32,21 +33,29 @@ At any one time, the machine has a head positioned over one of the cells on the 
   <iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/gJQTFhkhwPA?controls=0&amp;" frameborder="0" allowfullscreen></iframe>
 </div>
 
-Note that just because a Turing machine can compute anything, doesn't mean it can compute anything *efficiently*. Even simple algorithms you can write in a few lines in C takes is [quite](http://courses.cs.vt.edu/~cs1104/TM/TM.samples.html) [more](http://aturingmachine.com/examples.php) [complex](http://cnl.salk.edu/~oernst/projects/turing.html) if expressed purely with a Turing machine. That "can compute anything" comes with a caveat: that it might be very hard to write the program, or that it might take a ridiculously long time and/or ridiculously large memory as to be utterly useless in many cases.
+Note that just because a Turing machine can compute anything, doesn't mean it can compute anything *efficiently*. Even simple algorithms you can now write in a few lines in C takes is [quite](http://courses.cs.vt.edu/~cs1104/TM/TM.samples.html) [more](http://aturingmachine.com/examples.php) [complex](http://cnl.salk.edu/~oernst/projects/turing.html) if expressed purely with a Turing machine. That "can compute anything" comes with a caveat: that it might be very hard to write the program, or that it might take a ridiculously long time and/or ridiculously large memory as to be utterly useless in many cases.
 
-Turing machines soon became very popular, and eventually a standard because they both provided a powerful mechanism to calculate anything and were easy to understand.
+Despite those limitations, Turing machines are the very height of technology back in the day. Turing machines soon became very popular, and eventually a standard because they both provided a powerful mechanism to calculate anything and were easy to understand.
 
-The initial version of the Turing machine had just a long single tape. Later on, people came up with the concept of "multiple" tape Turing machines that used two to five tapes. Each head can move independently of the other heads. Since every multi-tape Turing machine has an equivalent single-tape Turing machine, multi-tape Turing machines were not any more powerful than single-tape ones, but they helped to simplify programs.
+The initial version of the Turing machine had just a long single tape. Later on, people came up with the concept of "multiple" tape Turing machines to simplify calculations. Multi-tape Turing machines use two to five tapes with an independently-moving head for each. Since every multi-tape Turing machine has an equivalent single-tape Turing machine, multi-tape Turing machines were not any more powerful than single-tape ones, but they helped to simplify programs.
 
 <div class="embed-responsive embed-responsive-16by9">
   <iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/psUCIK2k0FY?controls=0&amp;" frameborder="0" allowfullscreen></iframe>
 </div>
+<br />
 
 # Turing Completeness
 
+If a machine (physical or virtual) can take any program and run it just like a Turing machine, then that machine is called "Turing complete".
 
+![A scientific calculator, despite its power, is not Turing complete][scientific-calc]
 
+A good example of a Turing incomplete machine is a calculator. A calculator, whether a cheap calculator your local store uses or that shiny $100 graphing calculator you inherited from your forefathers can only perform a pre-defined set of calculations.
 
+However, the phone or PC or whatever you're reading this article on is a Turing complete machine because it can do any calculation that a Turing machine can do if given enough time and memory, even though "enough" can mean anywhere from less than a blink of an eye to more than the time it takes to gather enough money from work, buy a new computer, set it up, and run the algorithm.
+
+# TL;DR
+If something can run any algorithm, it's Turing complete.
 ----------
 References, in no particular order:
 * [Wikipedia, obviously](https://en.wikipedia.org/wiki/Turing_completeness)
@@ -56,3 +65,4 @@ References, in no particular order:
 * [Redditors attempting to explain Turing completeness to a five-year old](https://www.reddit.com/r/explainlikeimfive/comments/1nbcl5/turing_complete/)
 
 [example-tape]: /assets/images/2017-05-25-turing-completeness/example_turing_tape.png
+[scientific-calc]: /assets/images/2017-05-25-turing-completeness/calculator-scientific.jpg
