@@ -49,6 +49,7 @@ The initial version of the Turing machine had just a long single tape. Later on,
 If a physical machine or a virtual machine can take any program and run it just like a Turing machine, then that machine is called "Turing complete".
 
 ![A scientific calculator, despite its power, is not Turing complete][scientific-calc]
+*A Turing incomplete system*
 
 A good example of a Turing incomplete machine is a calculator. A calculator, whether a cheap calculator your local store uses or that shiny $100 graphing calculator you inherited from your forefathers can only perform a pre-defined set of calculations.
 
@@ -59,11 +60,14 @@ A Turing machine is just a concept---anything (physical or virtual) that can tak
 
 A programming language is Turing complete if it can simulate a single-taped Turing machine. In general, for a programming language to be Turing complete, it needs:
 1. A form of conditional repetition or conditional jump (e.g. `while`, `if + goto`)
-2. A way to read and write some form of storage (e.g., variables, tape)
+2. A way to read and write some form of storage (e.g. variables, tape)
 
 This means that most programming languages you can think of are Turing complete. C, C++, Java, Python, Haskell, Prolog, etc. are Turing complete.
 
+Besides programming languages, there are other systems that if used appropriately can be used to store and compute information. The card swapping and storing mechanic of [Magic: the Gathering](https://boingboing.net/2012/09/12/magic-the-gathering.html) is another system that would allow you to compute anything given enough cards, enough time, and enough transactions. Other unintentionally Turing-complete systems include, but not limited to [Minecraft](https://gaming.stackexchange.com/questions/20219/is-minecraft-turing-complete), [Minesweeper](http://web.mat.bham.ac.uk/R.W.Kaye/minesw/infmsw.pdf), [Pokémon](http://www.curtisbright.com/bln/2013/03/01/pokemon-yellow-is-turing-complete/), [PowerPoint](https://www.reddit.com/r/compsci/comments/62x9g9/powerpoint_is_turing_complete/),  [`mov` (and only `mov`) instruction in x86 Assembly](https://www.cl.cam.ac.uk/~sd601/papers/mov.pdf), [the rules used by the airline industry for determining flight availability](http://www.ai.mit.edu/courses/6.034f/psets/ps1/airtravel.pdf), [a series of buckets and stones](http://www.reddit.com/r/explainlikeimfive/comments/1nbcl5/turing_complete/cch68ft), and [the swarming behaviour of soldier crabs](https://www.technologyreview.com/s/427494/computer-scientists-build-computer-using-swarms-of-crabs/).
 
+![A Turing complete system][soldier-crab]
+*A Turing complete system*
 
 # TL;DR
 If something can run any algorithm, it's Turing complete.
@@ -72,10 +76,11 @@ If something can run any algorithm, it's Turing complete.
 References, in no particular order:
 * [Wikipedia, obviously](https://en.wikipedia.org/wiki/Turing_completeness)
 * [freeCodeCamp's much better attempt at explaining this](https://medium.freecodecamp.com/javascript-is-turing-complete-explained-41a34287d263)
-* [University of Cambridge's explanation on Turing machines](https://www.cl.cam.ac.uk/projects/raspberrypi/tutorials/turing-machine/one.html)
-* [ScienceBlogs' explanation on Turing machines](http://scienceblogs.com/goodmath/2007/02/03/basics-the-turing-machine-with-1/)
+* [University of Cambridge's](https://www.cl.cam.ac.uk/projects/raspberrypi/tutorials/turing-machine/one.html) and [ScienceBlogs'](http://scienceblogs.com/goodmath/2007/02/03/basics-the-turing-machine-with-1/) explanation on Turing machines
 * [Redditors attempting to explain Turing completeness to a five-year old](https://www.reddit.com/r/explainlikeimfive/comments/1nbcl5/turing_complete/)
-* [This StackExchange thread on minimum Turing completeness](https://softwareengineering.stackexchange.com/questions/132385/what-makes-a-language-turing-complete)
+* [This StackExchange thread](https://softwareengineering.stackexchange.com/questions/132385/what-makes-a-language-turing-complete) on minimum Turing completeness
+* [This Reddit thread](https://www.reddit.com/r/compsci/comments/1tvh6a/accidentally_turingcomplete_andreas_zwinkau/) and [this article](http://beza1e1.tuxen.de/articles/accidentally_turing_complete.html) on accidental Turing completeness
 
 [example-tape]: /assets/images/2017-05-25-turing-completeness/example_turing_tape.png
 [scientific-calc]: /assets/images/2017-05-25-turing-completeness/calculator-scientific.jpg
+[soldier-crab]: /assets/images/2017-05-25-turing-completeness/soldier-crab.jpg
