@@ -69,8 +69,39 @@ Besides programming languages, there are other systems that if used appropriatel
 ![A Turing complete system][soldier-crab]
 *A Turing complete system*
 
+## Turing Incomplete Languages
+If a programming language is mainstream, it's Turing complete. There are, however, several Turing incomplete *domain-specific* languages. ANSI SQL, regular expressions, data languages (JSON, etc.), and markup languages (HTML, CSS, etc.) are a few Turing incomplete languages you might know.
+
+Like every other piece of software there is, programming languages are about trade-offs. There's really no benefit for Turing incomplete programming languages that target several application domains, since the flexibility of Turing completeness is a lot more important than its complexity. On the other hand, if you're not building the "one language to rule them all", you're free to implement only features that make sense to the very specific purpose of the language.
+
+## Turing Tarpits and Esoteric Languages
+Just because a language is Turing complete doesn't mean you want to use it. Turing tarpits are Turing-complete languages that can compute anything, but writing a program to do it is ungodly difficult. Examples of Turing tarpits and general esoteric languages with `Hello world` examples include:
+
+* Brainfuck
+  ```brainfuck
+  ++++++++[>++++[>++>+++>+++>+<<<<-]>+>+>->>+[<]<-]>>.>---.+++++++..+++.>>.<-.<.+++.------.--------.>>+.>++.
+  ```
+
+* FRACTRAN
+  ```fractran
+  5^205469705004861725972941750691144/2
+
+  (e.g. 5^(72*256^0 + 101*256^1 + 108*256^2 + 108*256^3 + 111*256^4 + 44*256^5 + 32*256^6 + 87*256^7
+           + 111*256^8 + 114*256^9 + 108*256^10 + 100*256^11 + 33*256^12 + 10*256^13)/2)
+  ```
+  * Grass
+  ```grass
+  wvwwWWwWWWwvWwwwwWWwWWWwWWWWwWWWWWwWWWWWWwWWWWWWWwWwwwwwwwwwwwwWWWWwWWWWWWWwWWWWWWWWWWWWWWwWWWWWWWWWWWwwWWWWWWWWWWwwWWWWWWWWWWWWwWWWWWWWWWWwwWWWWWWWWWWwwwwwwWWWWWWWWWWWWWWWwWWWWWWWWWWWWWWWWWWWWWwWWWWWWWWWWWWWWWWWWwwWWWWWWWWWWWWWWWWWwwWWWWWWWWWWWWWWWWWwwwwwWWWWWWWWWWWWWWWWWWWWwwWWWWWWWWWWWWWWWWWWWWWWwWWWWWWWWWWWWWWWWWWWWWWWWWwwwwwwwwwwwwwwwwwwwwwwwwwwWwwwwwwwwwwWWwwwwwwwWWWwwwwwwwWWWWwWWWWWwwwwwwwwWWWWWWwwwwwwwwwwwwwwwwWWWWWWWwwwwwwwwwwwwwwwwwwwwWWWWWWWWwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwWWWWWWWWWwwwwWWWWWWWWWWwwwwwwwwwwwWWWWWWWWWWWwwwwwwwWWWWWWWWWWWWwwwwwwwwwwwwwwwwwwWWWWWWWWWWWWWwwwwwwwwwwwwwwwwwwwwwwwww
+  ```
+  * Piet (yes, this is code)
+  ![Hello World in Piet][piet-hello-world]
+  * Malbolge
+  ```malbolge
+  (=<`#9]~6ZY32Vx/4Rs+0No-&Jk)"Fh}|Bcy?`=*z]Kw%oG4UUS0/@-ejc(:'8dc
+  ```
+  
 # TL;DR
-If something can run any algorithm, it's Turing complete.
+If something can run any algorithm, it's Turing complete. Yes, even crabs.
 
 ----------
 References, in no particular order:
@@ -80,7 +111,9 @@ References, in no particular order:
 * [Redditors attempting to explain Turing completeness to a five-year old](https://www.reddit.com/r/explainlikeimfive/comments/1nbcl5/turing_complete/)
 * [This StackExchange thread](https://softwareengineering.stackexchange.com/questions/132385/what-makes-a-language-turing-complete) on minimum Turing completeness
 * [This Reddit thread](https://www.reddit.com/r/compsci/comments/1tvh6a/accidentally_turingcomplete_andreas_zwinkau/) and [this article](http://beza1e1.tuxen.de/articles/accidentally_turing_complete.html) on accidental Turing completeness
+* [Esolang Wiki](https://esolangs.org/wiki/Turing_tarpit) for all your esoteric language needs
 
 [example-tape]: /assets/images/2017-05-25-turing-completeness/example_turing_tape.png
 [scientific-calc]: /assets/images/2017-05-25-turing-completeness/calculator-scientific.jpg
 [soldier-crab]: /assets/images/2017-05-25-turing-completeness/soldier-crab.jpg
+[piet-hello-world]: /assets/images/2017-05-25-turing-completeness/piet-hello-world.jpg
