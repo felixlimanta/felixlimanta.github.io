@@ -46,7 +46,7 @@ The initial version of the Turing machine had just a long single tape. Later on,
 
 # Turing Completeness
 
-If a machine (physical or virtual) can take any program and run it just like a Turing machine, then that machine is called "Turing complete".
+If a physical machine or a virtual machine can take any program and run it just like a Turing machine, then that machine is called "Turing complete".
 
 ![A scientific calculator, despite its power, is not Turing complete][scientific-calc]
 
@@ -54,8 +54,20 @@ A good example of a Turing incomplete machine is a calculator. A calculator, whe
 
 However, the phone or PC or whatever you're reading this article on is a Turing complete machine because it can do any calculation that a Turing machine can do if given enough time and memory, even though "enough" can mean anywhere from less than a blink of an eye to more than the time it takes to gather enough money from work, buy a new computer, set it up, and run the algorithm.
 
+## Turing Completeness and Programming Languages
+A Turing machine is just a concept---anything (physical or virtual) that can take any program and run it is a Turing machine. And if that thing can run every program that a Turing machine can run, it's Turing complete.
+
+A programming language is Turing complete if it can simulate a single-taped Turing machine. In general, for a programming language to be Turing complete, it needs:
+1. A form of conditional repetition or conditional jump (e.g. `while`, `if + goto`)
+2. A way to read and write some form of storage (e.g., variables, tape)
+
+This means that most programming languages you can think of are Turing complete. C, C++, Java, Python, Haskell, Prolog, etc. are Turing complete.
+
+
+
 # TL;DR
 If something can run any algorithm, it's Turing complete.
+
 ----------
 References, in no particular order:
 * [Wikipedia, obviously](https://en.wikipedia.org/wiki/Turing_completeness)
@@ -63,6 +75,7 @@ References, in no particular order:
 * [University of Cambridge's explanation on Turing machines](https://www.cl.cam.ac.uk/projects/raspberrypi/tutorials/turing-machine/one.html)
 * [ScienceBlogs' explanation on Turing machines](http://scienceblogs.com/goodmath/2007/02/03/basics-the-turing-machine-with-1/)
 * [Redditors attempting to explain Turing completeness to a five-year old](https://www.reddit.com/r/explainlikeimfive/comments/1nbcl5/turing_complete/)
+* [This StackExchange thread on minimum Turing completeness](https://softwareengineering.stackexchange.com/questions/132385/what-makes-a-language-turing-complete)
 
 [example-tape]: /assets/images/2017-05-25-turing-completeness/example_turing_tape.png
 [scientific-calc]: /assets/images/2017-05-25-turing-completeness/calculator-scientific.jpg
