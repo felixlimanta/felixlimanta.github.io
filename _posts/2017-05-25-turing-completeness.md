@@ -41,7 +41,7 @@ The initial version of the Turing machine had just a long single tape. Later on,
 
 # Turing Completeness
 
-If a physical machine or a virtual machine can take any program and run it just like a Turing machine, then that machine is called "Turing complete". Turing completeness is kind of a certification---if something can solve any (solvable) problem, that something is Turing complete.
+If a physical machine or a virtual machine can take any program and run it just like a Turing machine, then that machine is called **Turing complete**. Turing completeness is kind of a certification---if something can solve any (solvable) problem, that something is Turing complete.
 
 {% capture images %}
     /assets/img/2017-05-25-turing-completeness/calculator-scientific.jpg
@@ -76,28 +76,34 @@ Like every other piece of software there is, programming languages are about tra
 ## Turing Tarpits and Esoteric Languages
 Just because a language is Turing complete doesn't mean you want to use it. Turing tarpits are Turing-complete languages that can compute anything, but writing a program to do it is ungodly difficult. Examples of Turing tarpits and general esoteric languages with `Hello world` examples include:
 
-* Brainfuck
+* [Brainfuck](https://esolangs.org/wiki/Brainfuck)
   ```brainfuck
   ++++++++[>++++[>++>+++>+++>+<<<<-]>+>+>->>+[<]<-]>>.>---.+++++++..+++.>>.<-.<.+++.------.--------.>>+.>++.
   ```
 
-* FRACTRAN
+* [FRACTRAN](https://esolangs.org/wiki/Talk:Fractran)
   ```fractran
   5^205469705004861725972941750691144/2
   ```
-* Grass
+* [Grass](http://www.blue.sky.or.jp/grass/)
   ```grass
-	wvwwWWwWWWwvWwwwwWWwWWWwWWWWwWWWWWwWWWWWWwWWWWWWWwWwwwwwwwwwwwwWWWWwWWWWWWWwWWWWWWWWWWWWWWwWWWWWWWWWWWwwWWWWWWWWWWwwWWWWWWWWWWWWwWWWWWWWWWWwwWWWWWWWWWWwwwwwwWWWWWWWWWWWWWWWwWWWWWWWWWWWWWWWWWWWWWwWWWWWWWWWWWWWWWWWWwwWWWWWWWWWWWWWWWWWwwWWWWWWWWWWWWWWWWWwwwwwWWWWWWWWWWWWWWWWWWWWwwWWWWWWWWWWWWWWWWWWWWWWwWWWWWWWWWWWWWWWWWWWWWWWWWwwwwwwwwwwwwwwwwwwwwwwwwwwWwwwwwwwwwwWWwwwwwwwWWWwwwwwwwWWWWwWWWWWwwwwwwwwWWWWWWwwwwwwwwwwwwwwwwWWWWWWWwwwwwwwwwwwwwwwwwwwwWWWWWWWWwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwWWWWWWWWWwwwwWWWWWWWWWWwwwwwwwwwwwWWWWWWWWWWWwwwwwwwWWWWWWWWWWWWwwwwwwwwwwwwwwwwwwWWWWWWWWWWWWWwwwwwwwwwwwwwwwwwwwwwwwww
+wvwwWWwWWWwvWwwwwWWwWWWwWWWWwWWWWWwWWWWWWwWWWWWWWwWwwwwwwwwwwwwWWWWwWWWWWWWwWWWWWWWWWWWWWWwWWWWWWWWWWWwwWWWWWWWWWWwwWWWWWWWWWWWWwWWWWWWWWWWwwWWWWWWWWWWwwwwwwWWWWWWWWWWWWWWWwWWWWWWWWWWWWWWWWWWWWWwWWWWWWWWWWWWWWWWWWwwWWWWWWWWWWWWWWWWWwwWWWWWWWWWWWWWWWWWwwwwwWWWWWWWWWWWWWWWWWWWWwwWWWWWWWWWWWWWWWWWWWWWWwWWWWWWWWWWWWWWWWWWWWWWWWWwwwwwwwwwwwwwwwwwwwwwwwwwwWwwwwwwwwwwWWwwwwwwwWWWwwwwwwwWWWWwWWWWWwwwwwwwwWWWWWWwwwwwwwwwwwwwwwwWWWWWWWwwwwwwwwwwwwwwwwwwwwWWWWWWWWwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwWWWWWWWWWwwwwWWWWWWWWWWwwwwwwwwwwwWWWWWWWWWWWwwwwwwwWWWWWWWWWWWWwwwwwwwwwwwwwwwwwwWWWWWWWWWWWWWwwwwwwwwwwwwwwwwwwwwwwwww
     ```
-* Piet (yes, this is code)
-  
-  ![Hello World in Piet](/assets/img/2017-05-25-turing-completeness/piet-hello-world.jpg)
-* Malbolge
+* [Piet](http://www.dangermouse.net/esoteric/piet.html) (yes, this is code)  
+  ![Hello World in Piet](/assets/img/2017-05-25-turing-completeness/piet-hello-world.png)
+* [Malbolge](https://esolangs.org/wiki/Malbolge)
   ```malbolge
   (=<`#9]~6ZY32Vx/4Rs+0No-&Jk)"Fh}|Bcy?`=*z]Kw%oG4UUS0/@-ejc(:'8dc
   ```
 
 In conclusion, just because something can calculate anything doesn't mean you should ever actually try to program with it. Just because you can make crabs solve the Travelling Salesman Problem doesn't mean you should.
+
+# Turing Equivalence
+A term you might have also heard is **Turing equivalence**, which is not the same as Turing completeness. If a machine can compute every computable function that a Turing machine can compute, it's Turing complete. If every algorithm a machine can compute is computable by a Turing machine, it's Turing equivalent.
+
+Confused? It's the difference between "can" and "need". Basically, a system is Turing equivalent if it's exactly as powerful as a Turing machine; it can compute everything a Turing machine can and only everything a Turing machine can. Another definition is that a system is Turing equivalent if it can simulate a Turing machine and be simulated by a Turing machine.
+
+Actually, we don't know if Turing complete is equal to Turing equivalent. They're equal if the [Church-Turing thesis](http://www.dsteurer.org/toc13/lectures/12/) is true, which is another can of worm's I'm not willing to explain without its own article. All known Turing complete systems are Turing equivalent though, which supports the thesis.
 
 # TL;DR
 If something can run any algorithm, it's Turing complete. Yes, even crabs.
@@ -111,3 +117,4 @@ References, in no particular order:
 * [This StackExchange thread](https://softwareengineering.stackexchange.com/questions/132385/what-makes-a-language-turing-complete) on minimum Turing completeness
 * [This Reddit thread](https://www.reddit.com/r/compsci/comments/1tvh6a/accidentally_turingcomplete_andreas_zwinkau/) and [this article](http://beza1e1.tuxen.de/articles/accidentally_turing_complete.html) on accidental Turing completeness
 * [Esolang Wiki](https://esolangs.org/wiki/Turing_tarpit) for all your esoteric language needs
+* [This StackOverflow answer](https://stackoverflow.com/a/1522882) on Turing completeness which sparked a debate on Turing completeness and Turing equivalence
