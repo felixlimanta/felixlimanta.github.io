@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Turing Completeness"
+title: "Turing Completeness for Non-CS Majors"
 date: 2017-05-25
-excerpt: "A (hopefully) simple explanation on Turing completeness."
+excerpt: "A (hopefully) simple explanation on what Turing completeness is."
 tags: [assignment, computing, language theory]
 feature: /assets/img/2017-05-25-turing-completeness/turing-machine-imitation-game.jpg
 comments: true
