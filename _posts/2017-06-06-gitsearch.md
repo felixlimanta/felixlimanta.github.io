@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "GitSearch"
+permalink: /GitSearch/
 date: 2017-06-06
 excerpt: "Java-based GitHub user finder"
 project: true
