@@ -75,6 +75,8 @@ Repositories will be displayed in a different tab in the lower panel. In case th
 The search results will still be available in the first tab. Selecting a different username, then retrieving their repositories will overwrite the repositories of the currently retrieved user. Similiarly, searching for a new query will overwrite the current search results, though the retrieved repositories will persist until another user has their repositories retrieved.
 
 ### Additional Information
+[Project specification](https://github.com/felixlimanta/GitSearch/blob/master/docs/Project%201%20Ca%20Labpro.pdf)
+
 [Class diagrams](https://github.com/felixlimanta/GitSearch/tree/master/docs/class_diagram_final)
 
 [Javadoc](https://felixlimanta.github.io/GitSearch/javadoc/index.html)
