@@ -12,6 +12,9 @@ encoding: utf-8
 
 This application uses **GitHub API** accesed through **REST**.
 
+## Quick start
+Download [GitSearch.jar][jar] and run it.
+
 ## JSON, REST, and GitHub API
 ### JSON
 **JavaScript Object Notation** or **JSON** is a lightweight data-interchange format easily readable/writable by both humans and computers. JSON is language-independent, but uses conventions reminiscent of the C-family language (C, C++, C#, Java, JavaScript, Perl, Python, etc.). These properties make JSON an ideal data-interchange language.
@@ -81,6 +84,7 @@ The search results will still be available in the first tab. Selecting a differe
 
 [Javadoc](https://felixlimanta.github.io/GitSearch/javadoc/index.html)
 
+[jar]: https://github.com/felixlimanta/GitSearch/raw/master/GitSearch.jar
 [ss001]: /assets/img/2017-06-06-gitsearch/screenshot_001.png
 [ss002]: /assets/img/2017-06-06-gitsearch/screenshot_002.png
 [ss003]: /assets/img/2017-06-06-gitsearch/screenshot_003.png
